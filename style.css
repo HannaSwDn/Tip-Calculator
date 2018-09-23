@@ -1,0 +1,270 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	color: white;
+	font-family: Mukta;
+	text-align: center;
+}
+
+/* iPhone design */
+
+.wrapper {
+	height: 88vh;
+	width: 100vw;
+	background-color: darkred;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.frame {
+	height: 75vh;
+	width: 100vw;
+	background-color: #202020;
+}
+
+h1 {
+    letter-spacing: 5px;
+    line-height: 10vh;
+    text-align: center;
+    font-size: 75px;
+    border-bottom: 2px solid white;
+}
+
+p {
+    font-size: 50px;
+    line-height: 8vh;
+}
+
+input, select, button {
+    height: 6vh;
+    width: 70vw;
+    color: black;
+    font-size: 50px;
+    background-color: white;
+}
+
+button {
+    background-color: green;
+    margin-top: 10px;
+    color: white;
+}
+
+#tip {
+    font-size: 75px;
+    line-height: 5vh;
+}
+
+/* Width queries */
+
+@media only screen and (max-width: 1440px) {
+		.wrapper {
+			height: 100vh;
+			overflow: hidden;
+		}
+
+		.frame {
+			height: 95vh;
+			overflow: hidden;
+		}
+
+		h1 {
+			line-height: 12vh;
+			font-size: 70px;
+		}
+
+		p {
+			line-height: 8vh;
+			font-size: 40px;
+		}
+
+		input, select, button {
+			height: 9vh;
+		}
+
+		#tip {
+			line-height: 10vh;
+		}
+}
+
+@media only screen and (max-width: 750px) {
+		h1 {
+			font-size: 60px;
+		}
+
+		p {
+			font-size: 35px;
+		}
+
+		button, input, select {
+			font-size: 40px;
+		}
+
+		#tip {
+			font-size: 60px;
+		}
+}
+
+@media only screen and (max-width: 650px) {
+		h1 {
+				font-size: 50px;
+		}
+
+		p {
+			font-size: 30px;
+		}
+
+		button, input, select {
+			font-size: 35px;
+		}
+
+		#tip {
+			font-size: 55px;
+		}
+}
+
+@media only screen and (max-width: 550px) {
+		h1 {
+			font-size: 50px;
+		}
+
+		p {
+			font-size: 25px;
+		}
+
+		button, input, select {
+			font-size: 30px;
+		}
+
+		#tip {
+			font-size: 50px;
+		}
+}
+
+@media only screen and (max-width: 450px) {
+	h1 {
+		letter-spacing: 3px;
+	}
+
+	p {
+		font-size: 20px;
+	}
+
+	button, input, select {
+		font-size: 25px;
+	}
+
+	#tip {
+		font-size: 45px;
+	}
+}
+
+/* iPhone queries */
+
+@media only screen
+and (min-device-width : 375px)
+and (max-device-width : 667px)
+and (orientation : portrait) {
+    .wrapper {
+    	height: 88vh;
+    	width: 100vw;
+    	background-color: darkred;
+    	display: flex;
+    	justify-content: center;
+    	align-items: center;
+    }
+
+    .frame {
+    	height: 75vh;
+    	width: 100vw;
+    	background-color: #202020;
+    }
+
+    h1 {
+        letter-spacing: 5px;
+        line-height: 10vh;
+        text-align: center;
+        font-size: 75px;
+        border-bottom: 2px solid white;
+    }
+
+    p {
+        font-size: 50px;
+        line-height: 8vh;
+    }
+
+    input, select, button {
+        height: 6vh;
+        width: 70vw;
+        color: black;
+        font-size: 50px;
+        background-color: white;
+    }
+
+    button {
+        background-color: green;
+        margin-top: 10px;
+        color: white;
+    }
+
+    #tip {
+        font-size: 75px;
+        line-height: 5vh;
+    }
+}
+
+/* iPhone in landscape mode */
+
+@media only screen
+and (min-device-width : 375px)
+and (max-device-width : 667px)
+and (orientation : landscape) {
+    .wrapper, .frame {
+        height: 160vh;
+    }
+
+    h1 {
+        line-height: 20vh;
+    }
+
+    p, #tip {
+        line-height: 15vh;
+    }
+
+    input, select, button {
+        height: 15vh;
+    }
+}
+
+/* iPad */
+
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)  {
+    .wrapper {
+        height: 95vh;
+    }
+}
+
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : landscape) {
+    .wrapper, .frame {
+        height: 122vh;
+    }
+
+    h1 {
+        line-height: 15vh;
+        font-size: 60px;
+    }
+
+    p {
+        line-height: 12vh;
+    }
+
+    input, select, button {
+        height: 12vh;
+    }
+}
